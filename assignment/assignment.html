@@ -1,9 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>hello world</title>
+	<meta charset="UTF-8">
+	<title>our menu</title>
+	<style>
+		.container{
+			width:100%;
+			horizontal:100%;
+			background-colour:white;
+			overflow:hidden;
+			margin-right:auto;
+			margin-left:auto;
+			padding:20px 0px;
+		}
+		.container ul{
+			padding:0px;
+			margin:0px;
+		}
+		.container ul li{
+			list style:none;
+			float:left;
+			width:50%;
+			height:300px;
+			border:1px solid black;
+			margin:40px 40px 0px 50px;
+			box-sizing:border-box;
+		}
+		.container ul li:hover{
+			opacity:0.9;
+		}
+		
+			
+			
+		
+		.container ul li .title{
+			width:50%;
+			heigh:50px
+				line-height:50px;
+			background-colour:red;
+			text-align:center;
+		}
+		@media screen and (max-width:992px){
+			.container ul li{
+				width:40%;
+				margin-left:20px;
+			}
+		}
+		
+		@media (min-width:768px)and (max-width:991px){
+			.container{
+				width:100%;
+				padding:0px;
+			}
+			.container ul li{
+				float:none;
+				width:90%;
+				margin:40px auto;
+			}
+		}
+		
+			
+		
+		
+	</style>			
+		
 </head>
 <body>
-<h1>hiiii!!!</h1>
+	<h1><center>our menu</center></h1>
+	<div class="container">
+		<ul>
+			<li><div class="title">chicken</div></li>
+			<li><div class="title">beef</div></li>
+			<li><div class="title">sushi</div></li>
+		</ul>
 </body>
 </html>
